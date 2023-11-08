@@ -1,0 +1,226 @@
+* {
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a::-moz-selection {
+
+    -moz-user-select: none !important;
+    user-select: none !important;
+}
+
+a::selection {
+
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+body {
+
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(/images/1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    form {
+
+        padding: 20px 35px;
+        max-width: 440px;
+        color: #ffffff;
+        background-color: rgb(255 255 255 / 30%);
+        border: 1px solid rgb(255 255 255 / 70%);
+        -webkit-box-shadow: 0px 0px 40px 0 rgb(207 207 255 / 42%);
+        box-shadow: 0px 0px 40px 0 rgb(207 207 255 / 42%);
+        border-radius: 20px;
+        -webkit-transition: -webkit-box-shadow 0.3s ease;
+        transition: -webkit-box-shadow 0.3s ease;
+        -o-transition: box-shadow 0.3s ease;
+        transition: box-shadow 0.3s ease;
+        transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+
+        .form-floating > .form-control:not(:-moz-placeholder-shown)~label {
+
+            transform: scale(.85) translateY(-1.3rem) translateX(-15px) !important;
+        }
+
+        .form-floating > .form-control:not(:-ms-input-placeholder)~label {
+
+            -ms-transform: scale(.85) translateY(-1.3rem) translateX(-15px) !important;
+            transform: scale(.85) translateY(-1.3rem) translateX(-15px) !important;
+        }
+
+        .form-floating > .form-control-plaintext~label,
+        .form-floating > .form-control:focus~label,
+        .form-floating > .form-control:not(:placeholder-shown)~label,
+        .form-floating > .form-select~label {
+
+            -webkit-transform: scale(.85) translateY(-1.3rem) translateX(-15px) !important;
+            -ms-transform: scale(.85) translateY(-1.3rem) translateX(-15px) !important;
+            transform: scale(.85) translateY(-1.3rem) translateX(-15px) !important;
+        }
+
+        .form-floating > .form-control:not(:-moz-placeholder-shown)~label::after {
+
+            content: "*";
+            font-size: 20px;
+            margin-left: 5px;
+            color: red;
+        }
+
+        .form-floating > .form-control:not(:-ms-input-placeholder)~label::after {
+
+            content: "*";
+            font-size: 20px;
+            margin-left: 5px;
+            color: red;
+        }
+
+        .form-floating > .form-control:not(:-moz-placeholder-shown):required~label::after {
+
+            content: "*";
+            font-size: 20px;
+            margin-left: 5px;
+            color: red;
+        }
+
+        .form-floating > .form-control:not(:-ms-input-placeholder):required~label::after {
+
+            content: "*";
+            font-size: 20px;
+            margin-left: 5px;
+            color: red;
+        }
+
+        .form-floating > .form-control-plaintext:required~label::after,
+        .form-floating > .form-control:focus:required~label::after,
+        .form-floating > .form-control:not(:placeholder-shown):required~label::after,
+        .form-floating > .form-select:required~label::after {
+
+            content: "*";
+            font-size: 20px;
+            margin-left: 5px;
+            color: red;
+        }
+
+        div.col-12 {
+
+            i.user-icon {
+
+                color: #ffffff;
+                font-size: 100px;
+            }
+
+            h1 {
+
+                text-align: center;
+                font-weight: 400;
+            }
+
+            input.form-control {
+
+                color: #ffffff;
+                border: 0;
+                border-radius: 0;
+                padding-left: 0;
+                background: transparent;
+                border-bottom: 1px solid rgb(207 207 207 / 35%);
+            }
+
+            input.form-control:focus {
+
+                -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+            }
+
+            // Add Red color to bottom border, when the field contains Invalid data...
+            input.form-control:invalid:focus {
+
+                border-bottom: 1px solid red;
+            }
+
+            input.form-control:not(:invalid):not(input.name_element) {
+
+                border-bottom: 1px solid initial;
+            }
+
+            button#show_hide {
+
+                width: 45px;
+            }
+
+            button#show_hide:hover {
+
+                background-color: rgb(255 255 255 / 4%);
+            }
+
+            input.form-check-input[type=checkbox] {
+
+                border-radius: 0;
+                border: 1px solid rgba(0, 43, 198, 0.21) !important;
+            }
+
+            p {
+
+                font-weight: 500;
+            }
+
+            label.fw {
+
+                font-weight: 500;
+            }
+
+            > label::-moz-selection {
+
+                background-color: transparent;
+            }
+
+            > label::selection {
+
+                background-color: transparent;
+            }
+
+            > label:hover {
+
+                cursor: pointer;
+            }
+
+            button {
+
+                font-weight: 500;
+            }
+        }
+
+        > div.col-12:not(:first-child, :last-child) {
+
+            padding: 1rem 0;
+        }
+
+        > div.col-12:first-child,
+        div.col-12:last-child {
+
+            padding-top: 1rem;
+        }
+    }
+
+    form:hover {
+
+        -webkit-box-shadow: 0px 0px 60px 30px rgb(209 212 255 / 21%);
+        box-shadow: 0px 0px 60px 30px rgb(209 212 255 / 21%);
+    }
+}

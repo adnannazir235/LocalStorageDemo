@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url(/images/2.jpg) !important;
+  background-size: cover;
+  background-position: center;
+}
+
+div#main {
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+div#main div.row div.col-12 div.dropdown {
+  list-style: none;
+}
+div#main div.row div.col-12 div.dropdown button.dropdown-toggle {
+  white-space: normal;
+  word-break: keep-all;
+}
+div#main div.row div.col-12 div.dropdown ul.dropdown-menu {
+  width: 176px;
+}
+div#main div.row div.col-12 div.dropdown ul.dropdown-menu li a.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #dc3545;
+}
+div#main section.content {
+  margin: auto;
+}
+
+form {
+  padding: 20px 35px;
+  max-width: 100%;
+  color: #ffffff;
+  background-color: rgba(35, 35, 35, 0.64);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 40px 0 rgba(207, 207, 255, 0.42);
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease;
+}
+form table {
+  font-size: 0.94rem;
+}
+form table tr td.col-2,
+form table tr td.col-10 {
+  padding: 1rem 0;
+}
+form .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
+  content: "*";
+  font-size: 20px;
+  margin-left: 5px;
+  color: red;
+}
+form .form-floating > .form-control:not(:-moz-placeholder-shown):required ~ label::after {
+  content: "*";
+  font-size: 20px;
+  margin-left: 5px;
+  color: red;
+}
+form .form-floating > .form-control-plaintext:required ~ label::after,
+form .form-floating > .form-control:focus:required ~ label::after,
+form .form-floating > .form-control:not(:placeholder-shown):required ~ label::after,
+form .form-floating > .form-select:required ~ label::after {
+  content: "*";
+  font-size: 20px;
+  margin-left: 5px;
+  color: red;
+}
+form h1 {
+  text-align: center;
+  font-weight: 400;
+}
+form input.form-control,
+form select.form-control {
+  color: #ffffff;
+  border-radius: 0;
+  background: transparent !important;
+  border: 1px solid #ffffff;
+  padding: 0.32rem 0.75rem;
+}
+form option {
+  color: black;
+  background-color: white;
+}
+form input.form-control:focus,
+form select.form-control:focus {
+  box-shadow: none !important;
+  color: #ffffff;
+}
+form input.form-control:invalid:focus,
+form select.form-control:invalid:focus {
+  border: 1px solid rgb(255, 0, 0);
+}
+form input.form-control:not(:invalid) {
+  border: 1px solid initial;
+}
+form button#show_hide {
+  width: 45px;
+}
+form button#show_hide:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+form input.form-check-input[type=checkbox] {
+  border-radius: 0;
+  border: 1px solid rgba(0, 43, 198, 0.21) !important;
+}
+form p {
+  font-weight: 500;
+}
+form label {
+  border: 1px solid;
+  padding: 0.37rem 0.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+form label.fw {
+  font-weight: 500;
+}
+form > label::-moz-selection {
+  background-color: transparent;
+}
+form > label::selection {
+  background-color: transparent;
+}
+form > label:hover {
+  cursor: pointer;
+}
+form button {
+  font-weight: 500;
+}
+
+form:hover {
+  box-shadow: 0px 0px 60px 30px rgba(209, 212, 255, 0.21);
+}/*# sourceMappingURL=landing-page.css.map */

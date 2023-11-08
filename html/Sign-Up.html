@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&family=Nothing+You+Could+Do&family=Oswald&family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOkc8XJyIXqh64Bh3S565z341s1NNMLUDUn8A9lpVRwXuwWM0bUsoOU2EP3FzFsWQ13LEtZe6-xqJjCWUUy45Xr0JFQoWaScVHh7FfpsI3c7KjFO31OzwqeWI-gkfP3gGAT10vg2fkksNOZ3st8S7fsVwZh36E5fqiGNcAyREcDUE3nUhKOHEKmEP7QA/s50/H.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/form.css">
+    <title>Sign Up!</title>
+</head>
+<body>
+
+<form method="dialog" class="row" name="sign_up" id="form1">
+
+    <div class="col-12 d-flex align-items-center justify-content-center">
+        <i class="far fa-user-circle user-icon"></i>
+    </div>
+
+    <div class="col-12">
+        <h1>Create Account</h1>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating">
+            <input type="text" class="form-control name_element" id="name" name="name" placeholder=" " maxlength="25" required>
+            <label for="name">Enter Your Name</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating">
+            <input type="email" class="form-control" name="email" placeholder=" " required>
+            <label for="email">Enter Your Email address</label> 
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating">
+            <button class="btn rounded-0 position-absolute end-0 h-100" id="show_hide"><i class="far fa-eye" id="pass_icon" style="color: #ffffff;"></i></button>
+            <input type="password" class="form-control" name="password" placeholder=" " minlength="8" required>
+            <label for="password">Enter Your Password</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="terms" required>
+        <label class="form-check-label fw ms-2" for="flexCheckDefault">I agree to the <a href="#" class="text-decoration-none">Terms and Conditions</a>.</label>
+    </div>
+
+    <div class="col-12">
+        <input type="submit" class="btn btn-primary rounded-pill w-100" value="Sign Up">
+    </div>
+
+    <div class="col-12 text-center">
+        <p>Already have an Account? <a href="Log-In.html" class="text-decoration-none">Log In</a></p>
+    </div>
+
+</form>
+
+<!-- Modals | Start -->
+
+<div class="modal fade" id="show" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title text-dark fs-5" id="exampleModalToggleLabel">Sign Up</h1>
+                <button type="button" id="close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <p class="text-dark" id="p"></p>
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" id="close_button" class="btn btn-primary d-inline-block">Try Again</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modals | End -->
+
+<!-- JavaScript | Start -->
+    <script src="/js/Sign-Up.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- JavaScript | End -->
+</body>
+</html>

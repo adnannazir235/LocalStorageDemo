@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a::-moz-selection {
+  -moz-user-select: none !important;
+  user-select: none !important;
+}
+
+a::selection {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
+}
+
+body {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body form {
+  padding: 20px 35px;
+  max-width: 440px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 40px 0 rgba(207, 207, 255, 0.42);
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease;
+}
+body form .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  transform: scale(0.85) translateY(-1.3rem) translateX(-15px) !important;
+}
+body form .form-floating > .form-control-plaintext ~ label,
+body form .form-floating > .form-control:focus ~ label,
+body form .form-floating > .form-control:not(:placeholder-shown) ~ label,
+body form .form-floating > .form-select ~ label {
+  transform: scale(0.85) translateY(-1.3rem) translateX(-15px) !important;
+}
+body form .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
+  content: "*";
+  font-size: 20px;
+  margin-left: 5px;
+  color: red;
+}
+body form .form-floating > .form-control:not(:-moz-placeholder-shown):required ~ label::after {
+  content: "*";
+  font-size: 20px;
+  margin-left: 5px;
+  color: red;
+}
+body form .form-floating > .form-control-plaintext:required ~ label::after,
+body form .form-floating > .form-control:focus:required ~ label::after,
+body form .form-floating > .form-control:not(:placeholder-shown):required ~ label::after,
+body form .form-floating > .form-select:required ~ label::after {
+  content: "*";
+  font-size: 20px;
+  margin-left: 5px;
+  color: red;
+}
+body form div.col-12 i.user-icon {
+  color: #ffffff;
+  font-size: 100px;
+}
+body form div.col-12 h1 {
+  text-align: center;
+  font-weight: 400;
+}
+body form div.col-12 input.form-control {
+  color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  padding-left: 0;
+  background: transparent;
+  border-bottom: 1px solid rgba(207, 207, 207, 0.35);
+}
+body form div.col-12 input.form-control:focus {
+  box-shadow: none !important;
+}
+body form div.col-12 input.form-control:invalid:focus {
+  border-bottom: 1px solid red;
+}
+body form div.col-12 input.form-control:not(:invalid):not(input.name_element) {
+  border-bottom: 1px solid initial;
+}
+body form div.col-12 button#show_hide {
+  width: 45px;
+}
+body form div.col-12 button#show_hide:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+body form div.col-12 input.form-check-input[type=checkbox] {
+  border-radius: 0;
+  border: 1px solid rgba(0, 43, 198, 0.21) !important;
+}
+body form div.col-12 p {
+  font-weight: 500;
+}
+body form div.col-12 label.fw {
+  font-weight: 500;
+}
+body form div.col-12 > label::-moz-selection {
+  background-color: transparent;
+}
+body form div.col-12 > label::selection {
+  background-color: transparent;
+}
+body form div.col-12 > label:hover {
+  cursor: pointer;
+}
+body form div.col-12 button {
+  font-weight: 500;
+}
+body form > div.col-12:not(:first-child, :last-child) {
+  padding: 1rem 0;
+}
+body form > div.col-12:first-child,
+body form div.col-12:last-child {
+  padding-top: 1rem;
+}
+body form:hover {
+  box-shadow: 0px 0px 60px 30px rgba(209, 212, 255, 0.21);
+}/*# sourceMappingURL=form.css.map */
