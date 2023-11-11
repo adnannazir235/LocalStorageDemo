@@ -1,4 +1,4 @@
 # LocalStorageDemo
 Explore a simple multi-user portal showcasing LocalStorage-based data management. Users can Sign Up, Log In, save, update, and delete their account. Note: This project prioritizes educational value over extensive security measures.
 
-Visit this URL to Showcase in your Browser: https://adnannazir123.github.io/LocalStorageDemo/Landing-Page
+Visit this URL to Showcase in your Browser: https://adnannazir235.github.io/LocalStorageDemo/Landing-Page
