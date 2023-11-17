@@ -190,7 +190,24 @@
     form:hover {
       box-shadow: 0px 0px 60px 30px rgba(209, 212, 255, 0.21);
     }
-    
+  
+    @media only screen and (max-width: 576px) {
+  
+      tr {
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 13px;
+        width: 100% !important;
+        margin-bottom: 25px;
+      }
+
+      div.col-12.col-sm-4.m-auto {
+
+        margin: 10px 0 !important;
+      }
+    }
+
   </style>
 
 </head>
@@ -247,14 +264,14 @@
         <tbody>
 
           <tr>
-            <td class="col-2"><label for="age">Your Age:</label></td>
-            <td class="col-10"><input type="number" id="age" min="15" max="95" class="form-control" name="age" required></td>
+            <td class="col-12 col-sm-2"><label for="age">Your Age:</label></td>
+            <td class="col-12 col-sm-10"><input type="number" id="age" min="15" max="95" class="form-control" name="age" required></td>
           </tr>
 
           <tr>
-            <td class="col-2"><label for="gender">Your Gender:</label></td>
+            <td class="col-12 col-sm-2"><label for="gender">Your Gender:</label></td>
           
-            <td class="col-10">
+            <td class="col-12 col-sm-10">
               <select name="gender" id="gender" class="form-control" required>
                 <option disabled selected value="">Choose Your Gender Here</option>
                 <option value="male">Male</option>
@@ -264,13 +281,13 @@
           </tr>
 
           <tr>
-            <td class="col-2"><label for="education">Your Education:</label></td>
-            <td class="col-10"><input type="text" minlength="10" maxlength="50" id="education" class="form-control" name="education"></td>
+            <td class="col-12 col-sm-2"><label for="education">Your Education:</label></td>
+            <td class="col-12 col-sm-10"><input type="text" minlength="10" maxlength="50" id="education" class="form-control" name="education"></td>
           </tr>
 
           <tr>
-            <td class="col-2"><label for="country">Your Country:</label></td>
-            <td class="col-10">
+            <td class="col-12 col-sm-2"><label for="country">Your Country:</label></td>
+            <td class="col-12 col-sm-10">
 
               <input class="form-control" list="countries" id="country" name="country" minlength="2" maxlength="2">
               <datalist id="countries">
@@ -532,14 +549,14 @@
           </tr>
 
           <tr>
-            <td class="col-2"><label for="city">Your City:</label></td>
-            <td class="col-10"><input type="text" minlength="1" maxlength="85" id="city" class="form-control" name="city"></td>
+            <td class="col-12 col-sm-2"><label for="city">Your City:</label></td>
+            <td class="col-12 col-sm-10"><input type="text" minlength="1" maxlength="85" id="city" class="form-control" name="city"></td>
           </tr>
 
           <tr>
-            <td class="col-2"><label for="hobbies">Your Hobby:</label></td>
+            <td class="col-12 col-sm-2"><label for="hobbies">Your Hobby:</label></td>
 
-            <td class="col-10">
+            <td class="col-12 col-sm-10">
               <select id="hobbies" class="form-control" name="hobby">
                 <option disabled selected value="">Choose Your Hobby Here</option>
                 <option value="Writing">Writing</option>
@@ -560,16 +577,16 @@
       <div class="row">
 
 
-        <div class="col-4 m-auto" id="edit" style="display: none;">
+        <div class="col-12 col-sm-4 m-auto" id="edit" style="display: none;">
           <input type="submit" id="edit_btn" class="btn btn-primary rounded-pill w-100" value="Save">
         </div>
 
-        <div class="col-4 m-auto" id="add_save" style="display: none;">
+        <div class="col-12 col-sm-4 m-auto" id="add_save" style="display: none;">
           <input type="submit" class="btn btn-primary rounded-pill w-100" id="add_save_btn" value="Add/Save">
         </div>
 
   
-        <div class="col-4 m-auto" id="delete" style="display: none;">
+        <div class="col-12 col-sm-4 m-auto" id="delete" style="display: none;">
           <input type="submit" class="btn btn-danger rounded-pill w-100" id="delete_btn" value="Delete">
         </div>
 
