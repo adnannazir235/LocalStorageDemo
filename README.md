@@ -6,8 +6,7 @@ This project is a simple multi-user portal that demonstrates the use of local st
 > Sign up: Create a new account with a username and password,
 Log in: Access their existing account,
 Save data: Store information using LocalStorage,
-Update data: Modify their saved information,
-Delete account: Remove their account and associated data.
+Update data: Modify their saved information and Delete account: Remove their account and associated data.
 
 Technologies Used:
 
