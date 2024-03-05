@@ -1,5 +1,5 @@
 # LocalStorageDemo
-Description: This project is a simple multi-user portal that demonstrates the use of LocalStorage for data management. Users can:
+Description: This project is a simple multi-user portal that demonstrates the use of local storage for data management. Users can:
 
 Sign up: Create a new account with a username and password.
 Log in: Access their existing account.
@@ -21,4 +21,6 @@ https://adnannazir235.github.io/LocalStorageDemo/Landing-Page
 
 Additional Notes:
 
-This project prioritizes educational value and demonstrates core functionalities to showcase LocalStorage usage in a web application. It is a simplified demonstration and not intended for deployment in a production environment due to the lack of robust security measures. Feel free to explore the code to learn about LocalStorage implementation, but remember these limitations when considering real-world applications.
+This project prioritizes educational value and demonstrates core functionalities to showcase LocalStorage usage in a web application.
+It is a simplified demonstration and not intended for deployment in a production environment due to the lack of robust security measures.
+Feel free to explore the code to learn about LocalStorage implementation, but remember these limitations when considering real-world applications.
