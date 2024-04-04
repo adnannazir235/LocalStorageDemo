@@ -8,7 +8,7 @@ Update data: Modify their saved information and Delete account: Remove their acc
 
 Technologies Used:
 
-> HTML, CSS/Bootstrap, JavaScript
+> HTML, CSS, JavaScript, Bootstrap
 
 You can view a live demonstration of the project in your browser at the following URL:
 
