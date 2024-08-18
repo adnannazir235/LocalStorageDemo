@@ -1,4 +1,4 @@
-# LocalStorageDemo
+# Local Storage Demo
 This project is a simple multi-user portal that demonstrates the use of local storage for data management. Users can:
 
 > Sign up: Create a new account with a username and password,
